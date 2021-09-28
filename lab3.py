@@ -246,7 +246,201 @@ elif typ == 2:
     print("======================================")
     print("      Laptop Operating System")
     print("======================================")
+    print("1. Windows")
+    print("2. macOS")
+    print("")
+    lapos = int(input("Choose the number of your choice: "))
     
+    
+    if lapos == 1:
+        lapost = "Windows"
+        print("======================================")
+        print("      Windows Memory Capacity")
+        print("======================================")
+        print("1. 4GB RAM; 512GB Hard Disk")
+        print("2. 4GB RAM; 1TB ROM")
+        print("3. 8GB RAM; 512GB Hard Disk")
+        print("4. 8GB RAM; 1TB ROM")
+        print("")
+        memr = int(input("Choose the number of your choice: "))
+        
+        if memr == 1:
+            memrt = "4GB RAM; 512GB HArd Disk"
+            price = "49,990.00"
+            print("======================================")
+            print("             Screen Size")
+            print("======================================")
+            print("1. 14 inches")
+            print("2. 15 inches")
+            print("3. 17 inches")
+            print("")
+            ss = int(input("Choose the number of your choice: "))
+            
+            if ss == 1:
+                sst = "14 inches"
+            elif ss == 2:
+                sst = "15 inches"
+            elif ss == 3:
+                sst = "16 inches"
+            else:
+                print("Invalid input, please try again.")
+        
+        elif memr == 2:
+            memrt = "4GB RAM; 1TB Hard Disk"
+            price = "54,990.00"
+            print("======================================")
+            print("              Screen Size")
+            print("======================================")
+            print("1. 14 inches")
+            print("2. 15 inches")
+            print("3. 17 inches")
+            print("")
+            ss = int(input("Choose the number of your choice: "))
+            
+            if ss == 1:
+                sst = "14 inches"
+            elif ss == 2:
+                sst = "15 inches"
+            elif ss == 3:
+                sst = "16 inches"
+            else:
+                print("Invalid input, please try again.")
+        
+        elif memr == 3:
+            memrt = "8GB RAM; 512GB Hard Disk"
+            price = "59,990.00"
+            print("======================================")
+            print("              Screen Size")
+            print("======================================")
+            print("1. 14 inches")
+            print("2. 15 inches")
+            print("3. 17 inches")
+            print("")
+            ss = int(input("Choose the number of your choice: "))
+            
+            if ss == 1:
+                sst = "14 inches"
+            elif ss == 2:
+                sst = "15 inches"
+            elif ss == 3:
+                sst = "17 inches"
+            else:
+                print("Invalid input, please try again.")
+            
+        elif memr == 4:
+            memrt = "8GB RAM; 1TB Hard Disk"
+            price = "64,990.00"
+            print("======================================")
+            print("              Screen Size")
+            print("======================================")
+            print("1. 14 inches")
+            print("2. 15 inches")
+            print("3. 17 inches")
+            print("")
+            ss = int(input("Choose the number of your choice: "))
+            
+            if ss == 1:
+                sst = "14 inches"
+            elif ss == 2:
+                sst = "15 inches"
+            elif ss == 3:
+                sst = "17 inches"
+            else:
+                print("Invalid input, please try again.")
+            
+        else:
+            print("Invalid input, please try again.")
+
+        print("")
+        print("======================================")
+        print("Wonderful choice! \nHere's the summary of your order:")
+        print("======================================")
+        print("Name: {}" .format(name))
+        print("Address: {}" .format(add))
+        print(" ")
+        print("Laptop OS : {}" .format(lapost))
+        print("Screen Size: {}" .format(sst))
+        print("Memory: {}" .format(memrt))
+        print("Intel: corei7 8th Gen")
+        print("SSD: 256 GB")
+        print("======================================")
+        print("Total Price: ₱{}" .format(price))
+        print("======================================")
+       
+    elif lapos == 2:
+        lapost = "macOS"
+        print("======================================")
+        print("      MacOS Memory Capacity")
+        print("======================================")
+        print("1. 8GB RAM; 1TB ROM")
+        print("2. 16GB RAM; 1TB ROM")
+        print("")
+        memr = int(input("Choose the number of your choice: "))
+        
+        if memr == 1:
+            memrt = "8GB RAM; 1TB Hard Disk"
+            price = "70,990.00"
+            print("======================================")
+            print("             Screen Size")
+            print("======================================")
+            print("1. 11 inches")
+            print("2. 12 inches")
+            print("3. 13 inches")
+            print("")
+            ss = int(input("Choose the number of your choice: "))
+            
+            if ss == 1:
+                sst = "11 inches"
+            elif ss == 2:
+                sst = "12 inches"
+            elif ss == 3:
+                sst = "13 inches"
+            else:
+                print("Invalid input, please try again.")
+            
+        elif memr == 2:
+            memrt = "16GB RAM; 1TB Hard Disk"
+            price = "99,990.00"
+            print("======================================")
+            print("               Screen Size")
+            print("======================================")
+            print("1. 11 inches")
+            print("2. 12 inches")
+            print("3. 13 inches")
+            print("")
+            ss = int(input("Choose the number of your choice: "))
+            
+            if ss == 1:
+                sst = "11 inches"
+            elif ss == 2:
+                sst = "12 inches"
+            elif ss == 3:
+                sst = "13 inches"
+            else:
+                print("Invalid input, please try again.")
+            
+
+        else:
+            print("Invalid input, please try again.")
+
+        print("")
+        print("======================================")
+        print("Wonderful choice! \nHere's the summary of your order:")
+        print("======================================")
+        print("Name: {}" .format(name))
+        print("Address: {}" .format(add))
+        print(" ")
+        print("Laptop OS : {}" .format(lapost))
+        print("Screen Size: {}" .format(sst))
+        print("Memory: {}" .format(memrt))
+        print("Intel: corei7 8th Gen")
+        print("SSD: 256 GB")
+        print("======================================")
+        print("Total Price: ₱{}" .format(price))
+        print("======================================")
+            
+    else:
+        print("Invalid input, please try again.")
 else:
     print("Invalid input, please try again.")
 
